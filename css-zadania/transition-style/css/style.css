@@ -1,0 +1,51 @@
+body {
+
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.box {
+
+    width:150px;
+    height:150px;
+    cursor:pointer;
+    transition:all 1.5s ease-in;
+
+}
+
+.red {
+
+    background-color: red;
+
+}
+
+.red:hover {
+
+    width:300px;
+
+}
+
+.green {
+
+    background-color: green;
+
+}
+
+.green:hover {
+
+    height:300px;
+}
+
+.blue {
+
+    background-color: blue;
+}
+
+.blue:hover {
+
+    width:300px;
+    height:300px;
+}
