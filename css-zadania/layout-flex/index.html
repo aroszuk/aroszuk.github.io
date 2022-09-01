@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        * {
+
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+       .box {
+
+        width:50%;
+        margin:auto;
+        color:#fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        display:flex;
+        flex-wrap:wrap;
+        text-align:center;
+
+       }
+
+       header {
+
+        flex-basis:100%;
+        background-color: red;
+        padding:5px;
+
+       }
+
+       aside {
+
+        flex-basis:20%;
+        height:28vh;
+       }
+
+       .aside-left {
+
+        background-color: green;
+
+       }
+
+       .aside-right {
+
+        background-color: pink;
+       }
+
+       main {
+
+        flex-basis:60%;
+        height:28vh;
+        background-color: aqua;
+        flex-grow:1;
+        overflow: auto;
+       }
+
+       footer {
+
+        flex-basis:100%;
+        background-color: purple;
+        padding:5px;
+       }
+
+       @media (max-width: 992px) {
+
+         .aside-left {
+
+            flex-basis:100%;
+            order:5;
+         }
+
+         footer {
+
+            order:6;
+         }
+
+       }
+
+       @media (max-width: 768px) {
+
+
+        .aside-right {
+
+            flex-basis:100%;
+            order:6;
+        }
+        
+       
+       }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <header>header</header>
+
+        <aside class="aside-left">aside-left</aside>
+
+        <main>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nesciunt suscipit quaerat culpa tempora molestiae, soluta dolore, doloribus, amet quasi incidunt? Libero eligendi odio unde laboriosam, accusamus nostrum! Nam, odit?</main>
+
+        <aside class="aside-right">aside-right</aside>
+
+        <footer>footer</footer>
+
+
+
+    </div>
+    
+</body>
+</html>
