@@ -1,0 +1,48 @@
+#newsletter-form {
+
+    width:30%;
+    padding:25px;
+    font-size: 16px;
+    color:#fff;
+    background-color: rgb(154,186,27);
+}
+
+input, label {
+
+    display:inline-block;
+
+}
+
+ul.errors {
+
+    color:red;
+    padding:10px;
+}
+
+label {
+
+    margin-top:10px;
+}
+
+input[type="text"], input[type="email"] {
+
+    height:20px;
+    width:100%;
+    margin-top:5px;
+}
+
+button[type="submit"] {
+
+    background-color: #ff9300;
+    font-weight:700;
+    border:none;
+    padding:10px;
+    margin-top:10px;
+    font-size: 15px;
+    color:#fff;
+}
+
+button[type="submit"]:hover {
+
+    background-color: #333;
+}
