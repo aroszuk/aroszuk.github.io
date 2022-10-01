@@ -15,6 +15,14 @@ footer  {
     background-position: center;
 }
 
+section.call-to-action {
+
+    background-image: url("../img/slider-1.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
 .showcase-text {
 
     padding:50px;
