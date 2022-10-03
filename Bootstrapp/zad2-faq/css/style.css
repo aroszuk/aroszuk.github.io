@@ -1,14 +1,10 @@
-i {
-    font-size:80px;
+.accordion-button {
+
+    display:flex;
+    justify-content:center;
 }
 
-div.word {
+.accordion-button::after {
 
-    width:150px;
-    height:150px;
+    display:none;
 }
-
-/* .item {
-
-    border:1px solid red;
-} */
