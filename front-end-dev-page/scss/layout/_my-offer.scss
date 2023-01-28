@@ -1,0 +1,215 @@
+section.my-offer {
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+    max-width:1600px;
+    margin:50px auto;
+
+    h2 {
+
+        flex-basis:100%;
+        font-family: $primary-font;
+        font-size:50px;
+        font-weight:700;
+        text-transform:uppercase;
+        text-align:center;
+        margin-bottom:50px;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        line-height:150px;
+        color:#fff;
+        
+    }
+
+    .offer-one {
+
+        flex-basis:50%;
+        display:flex;
+
+        @media all and (max-width:815px) {
+
+            flex-basis:80%;
+        }
+
+        @media all and (max-width:520px) {
+
+            flex-basis:97%;
+        }
+
+
+
+        .wordpress {
+
+            flex-basis:70%;
+            padding:70px 0 50px 30px;
+            transition:0.6s;
+
+            &:hover {
+
+                background-color: red;
+            }
+    
+            &:hover h3 {
+
+                color:#fff;
+            }
+
+            &:hover p {
+
+                color:beige;
+            }
+
+            &:hover+div.logo-wordpress {
+
+                background-color: red;
+
+            }
+
+            &:hover+div.logo-wordpress i {
+
+                color:#fff;
+            }
+
+
+
+            h3 {
+
+                font-size: 26px;
+                text-align:center;
+                margin-bottom:30px;
+
+            }
+
+            p {
+
+                font-family:$secondary-font;
+            }
+
+            p:nth-of-type(1) {
+
+                margin-bottom:30px;
+            }
+        }
+
+        .logo-wordpress {
+
+            flex-basis:30%;
+            text-align:center;
+            transition:0.6s;
+
+            i {
+
+                font-size: 100px;
+                padding-top:40%;
+
+                @media all and (max-width:520px) {
+
+                    padding-top:60%;
+                }
+            
+
+            }
+        
+        }
+
+    }
+
+    .offer-two {
+
+        flex-basis:50%;
+        display:flex;
+
+        @media all and (max-width:815px) {
+
+            flex-basis:80%;
+        }
+
+        @media all and (max-width:520px) {
+
+            flex-basis:97%;
+        }
+
+
+        .psd-html {
+
+            flex-basis:70%;
+            border-left:1px solid #333;
+            padding:70px 0 50px 30px;
+            transition:0.6s;
+
+            @media all and (max-width:815px) {
+
+                border:none;
+            }
+
+            &:hover {
+
+                background-color: red;
+            }
+    
+            &:hover h3 {
+
+                color:#fff;
+            }
+
+            &:hover p {
+
+                color:beige;
+            }
+
+            &:hover+div.logo-psd {
+
+                background-color: red;
+
+            }
+
+            &:hover+div.logo-psd i {
+
+                color:#fff;
+            }
+
+            h3 {
+
+                font-size: 26px;
+                text-align:center;
+                margin-bottom:30px;
+            }
+
+            p {
+
+                font-family:$secondary-font;
+            }
+
+            p:nth-of-type(1) {
+
+                margin-bottom:30px;
+            }
+
+        }
+
+        .logo-psd {
+
+            flex-basis:30%;
+            text-align:center;
+            transition:0.6s;
+
+            i {
+
+                font-size: 100px;
+                padding-top:40%;
+
+                @media all and (max-width:520px) {
+
+                    padding-top:60%;
+                }
+            }
+
+        }
+
+    }
+
+
+}
