@@ -253,6 +253,11 @@ input[type=checkbox], input[type=radio] {
     max-width: 1140px;
   }
 }
+@media all and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 header {
   width: 100%;
   height: 100vh;
@@ -274,7 +279,7 @@ header nav {
           animation: navi-begin 0.7s 1s 1 both;
   text-align: right;
   z-index: 1000;
-  background: linear-gradient(#000 0%, transparent 100%);
+  background: linear-gradient(#333 0%, transparent 100%);
   padding: 0;
   transition: 0.4s;
 }
@@ -340,6 +345,7 @@ header .introduction h1 {
   font-size: 80px;
   color: white;
   letter-spacing: 4px;
+  text-shadow: 3px 3px 0 #333;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -358,6 +364,7 @@ header .introduction h2 {
   color: #fff;
   padding: 0;
   margin: 0;
+  text-shadow: 3px 3px 0 #333;
 }
 @media all and (max-width: 490px) {
   header .introduction h2 {
@@ -535,14 +542,6 @@ header .open-menu-holder ul.menu-mobile li:nth-child(5) a {
     transform: translateY(0);
   }
 }
-section.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-}
 section.features h2 {
   flex-basis: 100%;
   font-family: "Saira Condensed", sans-serif;
@@ -552,31 +551,35 @@ section.features h2 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-section.features .feature {
+section.features .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+section.features .row .feature {
   flex-basis: 30%;
-  padding: 0 10px;
   text-align: center;
 }
 @media all and (max-width: 992px) {
-  section.features .feature {
+  section.features .row .feature {
     flex-basis: 45%;
   }
 }
 @media all and (max-width: 660px) {
-  section.features .feature {
+  section.features .row .feature {
     flex-basis: 90%;
   }
 }
-section.features .feature img {
+section.features .row .feature img {
   width: 100%;
   max-width: 375px;
 }
-section.features .feature h3 {
+section.features .row .feature h3 {
   font-family: "Saira Condensed", sans-serif;
   font-size: 22px;
   text-transform: uppercase;
 }
-section.features .feature p {
+section.features .row .feature p {
   font-family: "Saira", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -584,16 +587,7 @@ section.features .feature p {
   line-height: 1.3;
 }
 
-section.my-offer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  max-width: 1600px;
-  margin: 50px auto;
-}
 section.my-offer h2 {
-  flex-basis: 100%;
   font-family: "Saira Condensed", sans-serif;
   font-size: 50px;
   font-weight: 700;
@@ -606,129 +600,129 @@ section.my-offer h2 {
   line-height: 150px;
   color: #fff;
 }
-section.my-offer .offer-one {
+section.my-offer .offer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+section.my-offer .offer-wrap .offer-one {
   flex-basis: 50%;
   display: flex;
 }
 @media all and (max-width: 815px) {
-  section.my-offer .offer-one {
-    flex-basis: 80%;
+  section.my-offer .offer-wrap .offer-one {
+    flex-basis: 90%;
   }
 }
 @media all and (max-width: 520px) {
-  section.my-offer .offer-one {
+  section.my-offer .offer-wrap .offer-one {
     flex-basis: 97%;
   }
 }
-section.my-offer .offer-one .wordpress {
+section.my-offer .offer-wrap .offer-one .wordpress {
   flex-basis: 70%;
   padding: 70px 0 50px 30px;
   transition: 0.6s;
 }
-section.my-offer .offer-one .wordpress:hover {
+section.my-offer .offer-wrap .offer-one .wordpress:hover {
   background-color: red;
 }
-section.my-offer .offer-one .wordpress:hover h3 {
+section.my-offer .offer-wrap .offer-one .wordpress:hover h3 {
   color: #fff;
 }
-section.my-offer .offer-one .wordpress:hover p {
+section.my-offer .offer-wrap .offer-one .wordpress:hover p {
   color: beige;
 }
-section.my-offer .offer-one .wordpress:hover + div.logo-wordpress {
+section.my-offer .offer-wrap .offer-one .wordpress:hover + div.logo-wordpress {
   background-color: red;
 }
-section.my-offer .offer-one .wordpress:hover + div.logo-wordpress i {
+section.my-offer .offer-wrap .offer-one .wordpress:hover + div.logo-wordpress i {
   color: #fff;
 }
-section.my-offer .offer-one .wordpress h3 {
+section.my-offer .offer-wrap .offer-one .wordpress h3 {
   font-size: 26px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 30px;
 }
-section.my-offer .offer-one .wordpress p {
+section.my-offer .offer-wrap .offer-one .wordpress p {
   font-family: "Saira", sans-serif;
 }
-section.my-offer .offer-one .wordpress p:nth-of-type(1) {
+section.my-offer .offer-wrap .offer-one .wordpress p:nth-of-type(1) {
   margin-bottom: 30px;
 }
-section.my-offer .offer-one .logo-wordpress {
+section.my-offer .offer-wrap .offer-one .logo-wordpress {
   flex-basis: 30%;
   text-align: center;
   transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section.my-offer .offer-one .logo-wordpress i {
+section.my-offer .offer-wrap .offer-one .logo-wordpress i {
   font-size: 100px;
-  padding-top: 40%;
 }
-@media all and (max-width: 520px) {
-  section.my-offer .offer-one .logo-wordpress i {
-    padding-top: 60%;
-  }
-}
-section.my-offer .offer-two {
+section.my-offer .offer-wrap .offer-two {
   flex-basis: 50%;
   display: flex;
 }
 @media all and (max-width: 815px) {
-  section.my-offer .offer-two {
-    flex-basis: 80%;
+  section.my-offer .offer-wrap .offer-two {
+    flex-basis: 90%;
   }
 }
 @media all and (max-width: 520px) {
-  section.my-offer .offer-two {
+  section.my-offer .offer-wrap .offer-two {
     flex-basis: 97%;
   }
 }
-section.my-offer .offer-two .psd-html {
+section.my-offer .offer-wrap .offer-two .psd-html {
   flex-basis: 70%;
   border-left: 1px solid #333;
   padding: 70px 0 50px 30px;
   transition: 0.6s;
 }
 @media all and (max-width: 815px) {
-  section.my-offer .offer-two .psd-html {
+  section.my-offer .offer-wrap .offer-two .psd-html {
     border: none;
   }
 }
-section.my-offer .offer-two .psd-html:hover {
+section.my-offer .offer-wrap .offer-two .psd-html:hover {
   background-color: red;
 }
-section.my-offer .offer-two .psd-html:hover h3 {
+section.my-offer .offer-wrap .offer-two .psd-html:hover h3 {
   color: #fff;
 }
-section.my-offer .offer-two .psd-html:hover p {
+section.my-offer .offer-wrap .offer-two .psd-html:hover p {
   color: beige;
 }
-section.my-offer .offer-two .psd-html:hover + div.logo-psd {
+section.my-offer .offer-wrap .offer-two .psd-html:hover + div.logo-psd {
   background-color: red;
 }
-section.my-offer .offer-two .psd-html:hover + div.logo-psd i {
+section.my-offer .offer-wrap .offer-two .psd-html:hover + div.logo-psd i {
   color: #fff;
 }
-section.my-offer .offer-two .psd-html h3 {
+section.my-offer .offer-wrap .offer-two .psd-html h3 {
   font-size: 26px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 30px;
 }
-section.my-offer .offer-two .psd-html p {
+section.my-offer .offer-wrap .offer-two .psd-html p {
   font-family: "Saira", sans-serif;
 }
-section.my-offer .offer-two .psd-html p:nth-of-type(1) {
+section.my-offer .offer-wrap .offer-two .psd-html p:nth-of-type(1) {
   margin-bottom: 30px;
 }
-section.my-offer .offer-two .logo-psd {
+section.my-offer .offer-wrap .offer-two .logo-psd {
   flex-basis: 30%;
   text-align: center;
   transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section.my-offer .offer-two .logo-psd i {
+section.my-offer .offer-wrap .offer-two .logo-psd i {
   font-size: 100px;
-  padding-top: 40%;
-}
-@media all and (max-width: 520px) {
-  section.my-offer .offer-two .logo-psd i {
-    padding-top: 60%;
-  }
 }
 
 .hobby {
@@ -871,7 +865,6 @@ section.slogan .bg p.author {
 }
 
 .contact {
-  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -920,6 +913,15 @@ section.slogan .bg p.author {
   .contact .bg-map .contact-wrap form {
     flex-basis: 90%;
   }
+}
+.contact .bg-map .contact-wrap form ul {
+  flex-basis: 90%;
+}
+.contact .bg-map .contact-wrap form ul li {
+  display: inline-block;
+  list-style: none;
+  color: red;
+  margin-right: 10px;
 }
 .contact .bg-map .contact-wrap form input {
   width: 42%;

@@ -1,12 +1,8 @@
 .contact {
 
-    width:100%;
-    // max-width:1600px;
-    // margin:0 auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    // margin-top:-60px;
 
 
     .bg-map {
@@ -60,6 +56,19 @@
                 @media all and (max-width:560px) {
 
                     flex-basis:90%;
+                }
+
+                ul {
+
+                    flex-basis:90%;
+
+                    li {
+
+                        display:inline-block;
+                        list-style: none;
+                        color:red;
+                        margin-right:10px;
+                    }
                 }
 
                 input {

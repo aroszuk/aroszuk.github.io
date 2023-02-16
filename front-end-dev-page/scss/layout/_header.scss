@@ -20,7 +20,7 @@ header {
         animation:navi-begin 0.7s 1s 1 both;
         text-align:right;
         z-index:1000;
-        background:linear-gradient(#000 0%, transparent 100%);
+        background:linear-gradient(#333 0%, transparent 100%);
         padding:0;
         transition:0.4s;
 
@@ -136,6 +136,7 @@ header {
             font-size: 80px;
             color:white;
             letter-spacing: 4px;
+            text-shadow:3px 3px 0 #333;
             font-weight:700;
             padding:0;
             margin:0;
@@ -161,6 +162,7 @@ header {
             color:#fff;
             padding:0;
             margin:0;
+            text-shadow:3px 3px 0 #333;
 
             @media all and (max-width:490px) {
 

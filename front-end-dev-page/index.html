@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <header class="s1" data-section="dot1">
+    <header class="s1" id="s1" data-section="dot1">
 
         <nav>
             <ul class="menu">
@@ -57,60 +57,72 @@
 
         <div class="open-menu-holder">
             <ul class="menu-mobile">
-                <li><a href="#" class="dot1">home</a></li>
-                <li><a href="#" class="dot2">oferta</a></li>
-                <li><a href="#" class="dot4">o mnie</a></li> 
-                <li><a href="#" class="dot6">kontakt</a></li> 
+                <li><a href="#s1" class="dot1">home</a></li>
+                <li><a href="#s2" class="dot2">oferta</a></li>
+                <li><a href="#s4" class="dot4">o mnie</a></li> 
+                <li><a href="#s6" class="dot6">kontakt</a></li> 
             </ul>
         </div>
     </header>
 
-    <section class="features s2" data-section="dot2">
+    <section class="features s2" id="s2" data-section="dot2">
         <h2>Tworzę bardzo dobre strony internetowe</h2>
-        <div class="feature">
-          <img src="img/services1.png" alt="loga html js i css">
-          <h3>Nowoczesne i zgodne z aktualnymi standardami</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum maiores dolores fugit, soluta? Sed repudiandae, fugit provident suscipit cum architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
-        </div>
-        <div class="feature">
-          <img src="img/services2.png" alt="loga html js i css">
-          <h3>Zoptymalizowanie pod kątem wyszukiwarek internetowych</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum maiores dolores fugit, soluta? Sed repudiandae, fugit provident suscipit cum architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
-        </div>
-        <div class="feature">
-          <img src="img/services3.png" alt="loga html js i css">
-          <h3>Świetnie wyglądające na urzedziach mobilnych</h3>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum maiores dolores fugit, soluta? Sed repudiandae, fugit provident suscipit cum architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
+        <div class="container">
+            <div class="row">
+                <div class="feature">
+                    <img src="img/services1.png" alt="loga html js i css">
+                    <h3>Nowoczesne i zgodne z aktualnymi standardami</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum maiores dolores fugit, soluta? Sed repudiandae, fugit provident suscipit cum architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
+                </div>
+                <div class="feature">
+                    <img src="img/services2.png" alt="loga html js i css">
+                    <h3>Zoptymalizowanie pod kątem wyszukiwarek internetowych</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum maiores dolores fugit, soluta? Sed repudiandae, fugit provident suscipit cum architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
+                </div>
+                <div class="feature">
+                    <img src="img/services3.png" alt="loga html js i css">
+                    <h3>Świetnie wyglądające na urzedziach mobilnych</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum earum maiores dolores fugit, soluta? Sed repudiandae, fugit provident suscipit cum architecto asperiores, sequi obcaecati, alias sunt ea. Soluta, rerum, perspiciatis.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="my-offer s3" data-section="dot3">
         <h2 style="background-image:url(img/code.jpg)">Moja Oferta</h2>
 
-        <div class="offer-one">
-        <div class="wordpress">
-            <h3>Kompletna strona Wordpress</h3>
+        <div class="container">
+
+            <div class="offer-wrap">
+
+                <div class="offer-one">
+                    <div class="wordpress">
+                        <h3>Kompletna strona Wordpress</h3>
             
-            <p>Wykonanie strony internetowej opartej o System Zarządzania Treścią Wordprees.</p>
-            <p>Potrafię optymalnie dobrać solidne i bezpieczne rozszerzenia potrzebne do zbudowania strony.</p>
+                        <p>Wykonanie strony internetowej opartej o System Zarządzania Treścią Wordprees.</p>
+                        <p>Potrafię optymalnie dobrać solidne i bezpieczne rozszerzenia potrzebne do zbudowania strony.</p>
 
-        </div>
+                    </div>
 
-        <div class="logo-wordpress"><i class="fa-brands fa-wordpress"></i></div>
+                    <div class="logo-wordpress"><i class="fa-brands fa-wordpress"></i></div>
 
-        </div>
-        <div class="offer-two">
+                </div>
+
+                <div class="offer-two">
         
-        <div class="psd-html">
-            <h3>PSD do Html</h3>
-            <p>Wykonanie strony internetowej - stworzenie plików HTML, CSS i JavaScript na podstawie przekazanego projektu graficznego</p>
-            <p>Ręcznie pisany kod wysokiej jakości jest mozliwie semantyczny i uporządkowany. Strony są zgodne ze standardami organizacji W3C.</p>
-        </div>
-        <div class="logo-psd"><i class="fa-solid fa-file-image"></i></div>
+                    <div class="psd-html">
+                    <h3>PSD do Html</h3>
+                    <p>Wykonanie strony internetowej - stworzenie plików HTML, CSS i JavaScript na podstawie przekazanego projektu graficznego</p>
+                    <p>Ręcznie pisany kod wysokiej jakości jest mozliwie semantyczny i uporządkowany. Strony są zgodne ze standardami organizacji W3C.</p>
+                    </div>
+                    <div class="logo-psd"><i class="fa-solid fa-file-image"></i></div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section class="hobby s4" data-section="dot4">
+    <section class="hobby s4" id="s4" data-section="dot4">
         <h2>W wolnym czasie lubię</h2>
         <div class="item" style="background-image:url(img/hobby1.jpg)">
           <p>Chodzić po górach</p>
@@ -134,16 +146,19 @@
         </div>
     </section>
 
-    <section class="contact s6" data-section="dot6" style="background-image:url(img/mapa-ostrow.png);">
+    <section class="contact s6" data-section="dot6" id="s6" style="background-image:url(img/mapa-ostrow.png);">
         <div class="bg-map">
              <div class="container">
                 <h2>Skontaktuj się ze mną</h2>
                 <div class="contact-wrap">
-                    <form action="https://formspree.io/f/xyyazyod" method="POST">
-                         <input type="text" placeholder="Twoje imię" name="name">
-                         <input type="text" placeholder="Twoje nazwisko" name="name">
+
+                    <form action="https://formspree.io/f/xyyazyod" method="POST"       id="page-form">
+                         <ul id="errors"></ul>
+
+                         <input type="text" placeholder="Twoje imię" name="name" id="name">
+                         <input type="text" placeholder="Twoje nazwisko" name="name" id="lastName">
                          <input type="tel" name="phone" placeholder="Telefon">
-                         <input type="email" placeholder="E-mail" name="email">
+                         <input type="text" placeholder="E-mail" name="email" id="email">
                          <textarea name="message" placeholder="napisz wiadomość"></textarea>
                          <button class="btn-form">Wyślij</button>
                     </form>
@@ -174,6 +189,7 @@
     <script src="js/burger.js"></script>
     <script src="js/arrow.js"></script>
     <script src="js/navigation.js"></script>
+    <script src="js/validation.js"></script>
 
 </body>
 </html>

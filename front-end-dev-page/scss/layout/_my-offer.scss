@@ -1,15 +1,7 @@
 section.my-offer {
 
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    width:100%;
-    max-width:1600px;
-    margin:50px auto;
-
     h2 {
 
-        flex-basis:100%;
         font-family: $primary-font;
         font-size:50px;
         font-weight:700;
@@ -24,192 +16,194 @@ section.my-offer {
         
     }
 
-    .offer-one {
-
-        flex-basis:50%;
-        display:flex;
-
-        @media all and (max-width:815px) {
-
-            flex-basis:80%;
-        }
-
-        @media all and (max-width:520px) {
-
-            flex-basis:97%;
-        }
-
-
-
-        .wordpress {
-
-            flex-basis:70%;
-            padding:70px 0 50px 30px;
-            transition:0.6s;
-
-            &:hover {
-
-                background-color: red;
-            }
-    
-            &:hover h3 {
-
-                color:#fff;
-            }
-
-            &:hover p {
-
-                color:beige;
-            }
-
-            &:hover+div.logo-wordpress {
-
-                background-color: red;
-
-            }
-
-            &:hover+div.logo-wordpress i {
-
-                color:#fff;
-            }
-
-
-
-            h3 {
-
-                font-size: 26px;
-                text-align:center;
-                margin-bottom:30px;
-
-            }
-
-            p {
-
-                font-family:$secondary-font;
-            }
-
-            p:nth-of-type(1) {
-
-                margin-bottom:30px;
-            }
-        }
-
-        .logo-wordpress {
-
-            flex-basis:30%;
-            text-align:center;
-            transition:0.6s;
-
-            i {
-
-                font-size: 100px;
-                padding-top:40%;
-
-                @media all and (max-width:520px) {
-
-                    padding-top:60%;
-                }
-            
-
-            }
+    .offer-wrap {
         
-        }
-
-    }
-
-    .offer-two {
-
-        flex-basis:50%;
         display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-bottom:30px;
 
-        @media all and (max-width:815px) {
+        .offer-one {
 
-            flex-basis:80%;
-        }
-
-        @media all and (max-width:520px) {
-
-            flex-basis:97%;
-        }
-
-
-        .psd-html {
-
-            flex-basis:70%;
-            border-left:1px solid #333;
-            padding:70px 0 50px 30px;
-            transition:0.6s;
+            flex-basis:50%;
+            display:flex;
 
             @media all and (max-width:815px) {
 
-                border:none;
+            flex-basis:90%;
             }
 
-            &:hover {
+            @media all and (max-width:520px) {
 
-                background-color: red;
+            flex-basis:97%;
             }
+
+
+
+            .wordpress {
+
+                flex-basis:70%;
+                padding:70px 0 50px 30px;
+                transition:0.6s;
+
+                &:hover {
+
+                    background-color: red;
+                }
     
-            &:hover h3 {
+                &:hover h3 {
 
-                color:#fff;
-            }
+                    color:#fff;
+                }
 
-            &:hover p {
+                &:hover p {
 
-                color:beige;
-            }
+                    color:beige;
+                }
 
-            &:hover+div.logo-psd {
+                &:hover+div.logo-wordpress {
 
-                background-color: red;
+                    background-color: red;
 
-            }
+                }
 
-            &:hover+div.logo-psd i {
+                &:hover+div.logo-wordpress i {
 
-                color:#fff;
-            }
+                    color:#fff;
+                }
 
-            h3 {
 
-                font-size: 26px;
-                text-align:center;
-                margin-bottom:30px;
-            }
 
-            p {
+                h3 {
 
-                font-family:$secondary-font;
-            }
+                    font-size: 26px;
+                    text-align:left;
+                    margin-bottom:30px;
 
-            p:nth-of-type(1) {
+                }
 
-                margin-bottom:30px;
-            }
+                p {
 
-        }
+                    font-family:$secondary-font;
+                }
 
-        .logo-psd {
+                p:nth-of-type(1) {
 
-            flex-basis:30%;
-            text-align:center;
-            transition:0.6s;
-
-            i {
-
-                font-size: 100px;
-                padding-top:40%;
-
-                @media all and (max-width:520px) {
-
-                    padding-top:60%;
+                    margin-bottom:30px;
                 }
             }
+        
 
+            .logo-wordpress {
+
+                flex-basis:30%;
+                text-align:center;
+                transition:0.6s;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+
+                    font-size: 100px;
+            
+
+                }
+        
+            }
         }
 
-    }
+        .offer-two {
 
+            flex-basis:50%;
+            display:flex;
+
+            @media all and (max-width:815px) {
+
+                flex-basis:90%;
+            }
+
+            @media all and (max-width:520px) {
+
+                flex-basis:97%;
+            }
+
+
+            .psd-html {
+
+                flex-basis:70%;
+                border-left:1px solid #333;
+                padding:70px 0 50px 30px;
+                transition:0.6s;
+
+                @media all and (max-width:815px) {
+
+                    border:none;
+                }   
+
+                &:hover {
+
+                    background-color: red;
+                }
+    
+                &:hover h3 {
+
+                    color:#fff;
+                }
+
+                &:hover p {
+
+                    color:beige;
+                }
+
+                &:hover+div.logo-psd {
+
+                    background-color: red;
+
+                }
+
+                &:hover+div.logo-psd i {
+
+                    color:#fff;
+                }
+
+                h3 {
+
+                    font-size: 26px;
+                    text-align:left;
+                    margin-bottom:30px;
+                }
+
+                p {
+
+                    font-family:$secondary-font;
+                }
+
+                p:nth-of-type(1) {
+
+                    margin-bottom:30px;
+                }
+
+            }
+
+            .logo-psd {
+
+                flex-basis:30%;
+                text-align:center;
+                transition:0.6s;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+                i {
+
+                    font-size: 100px;
+                    
+                }
+
+            }
+
+        }
+    }    
 
 }
