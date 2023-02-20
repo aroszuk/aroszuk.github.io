@@ -19,10 +19,14 @@ $(document).on('scroll', function() {
 
     }
 
+    const scaleVal = (1 - (scrollValue/headerHeight));
+
+
+    if(scaleVal >= 0) {
     div.css({
         'opacity': 1 - (scrollValue/headerHeight)*2,
-        'transform':'scale(' + (1 - (scrollValue/headerHeight)) + ')'
+        'transform':'scale(' + scaleVal + ')'
    });
+};
 });
-
 
