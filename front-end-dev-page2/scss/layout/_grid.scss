@@ -1,0 +1,30 @@
+.row {
+
+    @include flexbox;
+    justify-content: space-between;
+}
+
+.col {
+
+    width:100%;
+
+}
+
+@media all and (min-width: $medium) {
+
+    .col-md-50p {
+
+        width:50%;
+    }
+
+    .col-md-33p {
+
+        width:30%;
+    }
+
+    .col-md-60p {
+
+        width:60%;
+    }
+
+}

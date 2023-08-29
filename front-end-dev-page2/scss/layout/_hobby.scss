@@ -1,0 +1,67 @@
+.hobby {
+
+    padding-bottom:0;
+
+    h2 {
+
+        text-align:center;
+
+    }
+
+    .hobby-item {
+
+        height:300px;
+        overflow: hidden;
+        position:relative;
+
+        .img-background {
+
+            width: 100%;
+	        height: 100%;
+	        background-position: center;
+	        background-size: cover;
+            transition: all 0.5s;
+        }
+
+        p {
+
+            font-family:$secondary-font;
+            position:absolute;
+            width:100%;
+            top:50%;
+            left:0;
+            transform:translateY(-100%);
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 4px black;
+            background-color: rgba(0, 0, 0, .3);
+            font-size:32px;
+            padding: 0;
+            opacity: 1;
+            transition: 1s;
+
+            @media all and (min-width: $large) {
+
+                opacity:0;
+                font-size: 40px;
+            }
+        }
+
+        @media all and (min-width: $large) {
+
+            height:350px;
+
+        &:hover .img-background {
+
+            transform:scale(1.3);
+        }
+
+        &:hover p {
+
+            opacity:1;
+        }
+
+        }
+        
+    }
+}

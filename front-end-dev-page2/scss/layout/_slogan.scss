@@ -1,0 +1,46 @@
+.slogan {
+
+    height:90vh;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+    color: white;
+
+    h2 {
+
+        color:#fff;
+        text-transform: uppercase;
+        font-weight:700;
+        text-align: center;
+    }
+
+    p {
+
+        width:90%;
+        margin:0 auto;
+        color:#fff;
+        margin-bottom:50px;
+    }
+
+    .text {
+
+        font-family:$secondary-font;
+        font-size: 40px;
+
+        
+    }
+
+    @media all and (min-width:$large) {
+
+        p {
+
+            width:50%;
+        }
+
+        h2 {
+
+            font-size: 55px;
+        }
+    }
+}

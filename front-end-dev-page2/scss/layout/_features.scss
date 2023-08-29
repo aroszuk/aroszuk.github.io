@@ -1,0 +1,45 @@
+.features {
+
+    background-color: $primary-grey;
+
+    h2 {
+
+        text-align:center;
+    }
+
+    .row {
+
+        justify-content: space-between;
+
+        .feature {
+
+            background-color: #fff;
+            text-align: center;
+            // border:1px solid #999;
+            border-radius:12%;
+            padding:15px 5px;
+            transition:all 0.3s;
+
+            @media all and (min-width: $large) {
+
+                &:hover {
+
+                    box-shadow:0 0 3px 5px rgb(245,245,245);
+                    transform:scale(1.1,1.1);
+                }
+
+            }
+
+            
+
+            img {
+
+                width:100%;
+            }
+        }
+
+
+    }
+
+
+}
